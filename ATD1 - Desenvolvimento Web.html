@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Semana Acadêmica 2026</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #1f3c88, #39a0ed);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* MAIN */
+main {
+    flex: 3;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ASIDE */
+aside {
+    flex: 1;
+    background: #e3eaf2;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* PALESTRANTES */
+article {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #39a0ed;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #1f3c88;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #39a0ed;
+}
+
+/* FOOTER */
+footer {
+    background: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Semana Acadêmica de Ciência da Computação 2026</h1>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#programacao">Programação</a>
+        <a href="#palestrantes">Palestrantes</a>
+        <a href="#inscricao">Inscrição</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<main>
+
+<section id="inicio">
+    <h2>Início</h2>
+    <p>Bem-vindo à Semana Acadêmica de Ciência da Computação 2026. Um evento feito para compartilhar conhecimento e experiências na área de tecnologia.</p>
+</section>
+
+<section id="sobre">
+    <h2>Sobre o evento</h2>
+    <p>A Semana Acadêmica reúne alunos, professores e profissionais para discutir temas atuais da área de computação.</p>
+    <p>O objetivo é proporcionar aprendizado através de palestras, workshops e minicursos.</p>
+    <img src="https://via.placeholder.com/600x300" alt="Evento">
+</section>
+
+<section id="programacao">
+    <h2>Programação</h2>
+    <ul>
+        <li><strong>Dia 1:</strong>
+            <ul>
+                <li>Abertura do evento</li>
+                <li>Palestra: Inteligência Artificial</li>
+            </ul>
+        </li>
+        <li><strong>Dia 2:</strong>
+            <ul>
+                <li>Minicurso: Desenvolvimento Web</li>
+                <li>Workshop: Git e GitHub</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="palestrantes">
+    <h2>Palestrantes</h2>
+
+    <article>
+        <h3>João Silva</h3>
+        <p>Especialista em Inteligência Artificial com experiência no mercado.</p>
+        <p><strong>Área:</strong> IA</p>
+    </article>
+
+    <article>
+        <h3>Maria Souza</h3>
+        <p>Desenvolvedora Full Stack e instrutora.</p>
+        <p><strong>Área:</strong> Web</p>
+    </article>
+
+    <article>
+        <h3>Carlos Lima</h3>
+        <p>Engenheiro de software com foco em backend.</p>
+        <p><strong>Área:</strong> Backend</p>
+    </article>
+
+</section>
+
+<section id="inscricao">
+    <h2>Inscrição</h2>
+
+    <form onsubmit="alert('Inscrição enviada com sucesso!'); return false;">
+
+        <label>Nome:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Telefone:</label>
+        <input type="tel">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+</section>
+
+</main>
+
+<aside>
+    <h3>Informações extras</h3>
+    <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Edição 2025</a></li>
+    </ul>
+</aside>
+
+</div>
+
+<footer id="contato">
+    <p>Organização: Ciência da Computação</p>
+    <p>© 2026 - Todos os direitos reservados</p>
+    <p>Email: contato@evento.com</p>
+</footer>
+
+</body>
+</html>
