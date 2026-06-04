@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana Acadêmica 2026</title>
+
+    <link rel="stylesheet" href="../css/style.css?v=1">
+</head>
+
+<body>
+
+    <header>
+        <h1>Semana Acadêmica de Ciência da Computação 2026</h1>
+
+        <button type="button" onclick="alterarTema()">
+            Tema Claro/Escuro
+        </button>
+    </header>
+
+    <section>
+        <h2>Sobre o Evento</h2>
+
+        <p>
+            Bem-vindo à Semana Acadêmica de Ciência da Computação 2026.
+        </p>
+
+        <button type="button" onclick="mostrarOcultar()">
+            Leia Mais
+        </button>
+
+        <div id="extra" style="display:none;">
+            <p>
+                O evento contará com palestras, minicursos,
+                workshops e networking entre alunos e profissionais.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Inscrição</h2>
+
+        <form action="../php/processa_formulario.php"
+              method="POST"
+              onsubmit="return validarFormulario()">
+
+            <label>Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label>Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
